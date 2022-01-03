@@ -12,8 +12,6 @@ export class AppComponent {
   constructor(){
     this.query = "barot";
     this.artist = [
-
-      
       {
         "name": "Barot Bellingham",
         "shortname": "Barot_Bellingham",
