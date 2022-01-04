@@ -19,12 +19,13 @@ export // dont put a (;) after that last paren to
 class AppComponent implements OnInit {
 	query: string;
 	artists: any;
-  currentArtist: any;
+	currentArtist: any;
+	
 
 	showArtist(item: any) {
 		this.query = item.name;
 		item.highlight = !item.highlight;
-    this.currentArtist = item;
+		this.currentArtist = item;
 	}
 
 	constructor(private http: HttpClient) {
