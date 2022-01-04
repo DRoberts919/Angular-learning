@@ -6,8 +6,14 @@ import { Component, OnInit, Input , Output,EventEmitter} from '@angular/core';
   styleUrls: ['./media-item-component.component.css']
 })
 export class MediaItemComponentComponent implements OnInit {
+  medium ='';
+  mediaItems=[];
+  
+  
   @Input() mediaItem: any;
   @Output() delete = new EventEmitter();
+
+
 
   onDelete(){
     console.log("deleted")
